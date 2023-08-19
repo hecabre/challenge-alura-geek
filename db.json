@@ -1,0 +1,18 @@
+{
+  "comics": [
+    {
+      "comicName": "Marvel Comics: The Poster Collection ",
+      "description": "Celebrate the 75th anniversary of Marvel Comics with this action packed poster book featuring Marvel’s most iconic comic book covers.\n\nFor over seventy-five years, Marvel Comics has been thrilling fans with iconic comic book covers that perfectly capture the dynamic characters and explosive situations that make the Marvel universe so compelling. This poster book brings together forty covers from Marvel’s most memorable issues, from Spider-Man’s striking debut in Amazing Fantasy #15 to the first installment of Marvel Super Heroes Secret Wars. Each poster is easy to remove and perfect for displaying.",
+      "imageUrl": "https://m.media-amazon.com/images/I/61HV1JBB4EL._SX379_BO1,204,203,200_.jpg",
+      "price": "122",
+      "id": 1
+    },
+    {
+      "comicName": "MARVEL'S THE INFINITY SAGA POSTER BOOK PHASE 3",
+      "description": "You're gonna need a bigger house! And make sure it has plenty of wall space - because the Marvel Cinematic Universe poster collection has entered Phase Three, and your gallery of masterpieces is about to expand! It starts with a civil war that splits the Avengers - and only gets more explosive from there, culminating in Thanos unleashing his full might in a universe-shattering Infinity War and leading to the Avengers' desperate Endgame! New stars Doctor Strange, Black Panther, Captain Marvel, The Wasp and more join all your favorite established heroes on incredible, frameable works of art that have each cemented their place in Hollywood history! Relive the big-screen blockbusters of the MCU's Phase Three, and make yours Marvel movie masterpieces!",
+      "imageUrl": "https://m.media-amazon.com/images/I/4136xcCnaPL._SX335_BO1,204,203,200_.jpg",
+      "price": "110",
+      "id": 2
+    }
+  ]
+}
