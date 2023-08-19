@@ -7,7 +7,7 @@ export const comicApi = createApi({
     baseUrl: "https://alura-geek-api.vercel.app/api",
     validateStatus: (response) => {
       if (response.status === 404) {
-        throw new Error("Comic not found");
+        throw new Error("Comic not found")
       }
       return response.ok;
     },
@@ -24,7 +24,7 @@ export const comicApi = createApi({
       transformResponse: (response) => response[0],
       onError: (error) => {
         if (error.status === 404) {
-          return new Error("Comic not found");
+          return new Error("Comic not found")
         }
         return error;
       },
@@ -33,7 +33,7 @@ export const comicApi = createApi({
 
     editComic: builder.mutation({
       query: (comicData) => ({
-        url: `/comics/${comicData.id}`,
+        url: `/comics${comicData.id}`,
         body: comicData,
         method: "PUT",
       }),
