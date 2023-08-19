@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const baseUrl = "http://gateway.marvel.com/v1/public";
+const baseUrl = "https://gateway.marvel.com/v1/public";
 
 export const marvelApi = createApi({
   reducerPath: "marvelApi",
