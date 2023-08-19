@@ -8,7 +8,13 @@ function CreateComicPage() {
   if (!sessionState) {
     return <Navigate to="/error" />;
   }
-  return <CreateComicForm isEditing={false} comicData={false} />;
+  return (
+    <CreateComicForm
+      isEditing={false}
+      comicData={false}
+      closeFunction={false}
+    />
+  );
 }
 
 export default CreateComicPage;

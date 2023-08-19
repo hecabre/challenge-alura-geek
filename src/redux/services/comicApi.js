@@ -33,7 +33,7 @@ export const comicApi = createApi({
 
     editComic: builder.mutation({
       query: (comicData) => ({
-        url: `/comics?id=${comicData.id}`,
+        url: `/comics/${comicData.id}`,
         body: comicData,
         method: "PUT",
       }),
@@ -49,7 +49,7 @@ export const comicApi = createApi({
     }),
     deleteComic: builder.mutation({
       query: (id) => ({
-        url: `/comics?id=${id}`,
+        url: `/comics/${id}`,
         method: "DELETE",
       }),
       invalidatesTags: ["Comics"],

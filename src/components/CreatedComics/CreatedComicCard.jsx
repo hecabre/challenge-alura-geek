@@ -15,7 +15,10 @@ function CreatedComicCard({ comic }) {
         <p className="text-center text-gray-700 font-light">
           Price: ${comic.price}.00
         </p>
-        <Link className="bg-blue-500 rounded w-full flex justify-center p-2 text-white font-light cursor-pointer">
+        <Link
+          className="bg-blue-500 rounded w-full flex justify-center p-2 text-white font-light cursor-pointer"
+          to={`/created-comics/${comic.id}`}
+        >
           Details
         </Link>
       </div>
