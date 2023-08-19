@@ -4,7 +4,7 @@ export const comicApi = createApi({
   reducerPath: "comicApi",
   tagTypes: ["Comics"],
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:8080",
+    baseUrl: "https://alura-geek-api.vercel.app/api/comics",
     validateStatus: (response) => {
       if (response.status === 404) {
         throw new Error("Comic not found");
