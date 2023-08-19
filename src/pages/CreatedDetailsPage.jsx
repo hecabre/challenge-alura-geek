@@ -33,7 +33,6 @@ function CreatedDetailsPage() {
   const filteredComicsData = comicsData?.filter(
     (comic) => comic.id !== parseInt(id)
   );
-
   return (
     <div className="relative top-24 ">
       <section

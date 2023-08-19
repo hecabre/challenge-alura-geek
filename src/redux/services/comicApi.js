@@ -4,7 +4,7 @@ export const comicApi = createApi({
   reducerPath: "comicApi",
   tagTypes: ["Comics"],
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://alura-geek-api.vercel.app/api/comics",
+    baseUrl: "https://alura-geek-api.vercel.app/api",
     validateStatus: (response) => {
       if (response.status === 404) {
         throw new Error("Comic not found");
@@ -19,8 +19,9 @@ export const comicApi = createApi({
       providesTags: ["Comics"],
     }),
     getComicDetailsById: builder.query({
-      query: (id) => `/comics/${id}`,
+      query: (id) => `/comics?id=${id}`,
       throwOnError: true,
+      transformResponse: (response) => response[0],
       onError: (error) => {
         if (error.status === 404) {
           return new Error("Comic not found");
@@ -32,7 +33,7 @@ export const comicApi = createApi({
 
     editComic: builder.mutation({
       query: (comicData) => ({
-        url: `/comics/${comicData.id}`,
+        url: `/comics?id=${comicData.id}`,
         body: comicData,
         method: "PUT",
       }),
@@ -48,7 +49,7 @@ export const comicApi = createApi({
     }),
     deleteComic: builder.mutation({
       query: (id) => ({
-        url: `/comics/${id}`,
+        url: `/comics?id=${id}`,
         method: "DELETE",
       }),
       invalidatesTags: ["Comics"],
